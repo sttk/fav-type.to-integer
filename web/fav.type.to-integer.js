@@ -35,6 +35,15 @@ function isFiniteNumber(value) {
   return false;
 }
 
+function isNotFiniteNumber(value) {
+  return !isFiniteNumber(value);
+}
+
+Object.defineProperty(isFiniteNumber, 'not', {
+  enumerable: true,
+  value: isNotFiniteNumber,
+});
+
 module.exports = isFiniteNumber;
 
 },{}],3:[function(require,module,exports){
@@ -49,6 +58,15 @@ function isString(value) {
   }
   return false;
 }
+
+function isNotString(value) {
+  return !isString(value);
+}
+
+Object.defineProperty(isString, 'not', {
+  enumerable: true,
+  value: isNotString,
+});
 
 module.exports = isString;
 
