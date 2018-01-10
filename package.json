@@ -1,7 +1,7 @@
 {
   "name": "@fav/type.to-integer",
   "version": "0.7.1",
-  "description": "Convert a number or a string to an integer.",
+  "description": "Converts a number or a string to an integer.",
   "main": "index.js",
   "files": [
     "index.js",
@@ -40,8 +40,8 @@
   },
   "homepage": "https://github.com/sttk/fav-type.to-integer#readme",
   "dependencies": {
-    "@fav/type.is-string": "^0.6.0",
-    "@fav/type.is-finite-number": "^0.6.0"
+    "@fav/type.is-string": "^1.0.0",
+    "@fav/type.is-finite-number": "^1.0.0"
   },
   "devDependencies": {
     "browserify": "^14.4.0",
