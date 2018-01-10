@@ -19,7 +19,7 @@ $ npm install --save @fav/type.to-integer
 
 ## Usage
 
-For Node.js, when installing `@fav/type.to-integer` from npm:
+For Node.js:
 
 ```js
 var toInteger = require('@fav/type.to-integer');
