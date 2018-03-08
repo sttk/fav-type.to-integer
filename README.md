@@ -14,7 +14,7 @@ To install from npm:
 $ npm install --save @fav/type.to-integer
 ```
 
-***NOTE:*** *npm < 2.7.0 does not support scoped package, but even old version Node.js supports it. So when you use such older npm, you should download this package from [github.com][repo-url], and move it in `node_modules/@fav/type.to-integer/` directory manually.*
+***NOTE:*** *npm < 2.7.0 does not support scoped package, but old version Node.js supports it. So when you use such older npm, you should download this package from [github.com][repo-url], and move it in `node_modules/@fav/type.to-integer/` directory manually.*
 
 
 ## Usage
@@ -26,7 +26,9 @@ var toInteger = require('@fav/type.to-integer');
 toInteger(123); // => 123
 toInteger('456'); // => 456
 toInteger(7.89); // => 7
-toInteger(null, 999); // => 999
+toInteger(Infinity); // => NaN
+toInteger('ABC'); // =>> NaN
+toInteger('ABC', 100); // => 100
 ```
 
 For Web browsers:
@@ -42,22 +44,23 @@ toInteger('456'); // => 456
 
 ## API
 
-### <u>toInteger(value [, defaultValue]): number</u>
+### <u>toInteger(value [, defaultValue]) : number</u>
 
 Converts a number or a string to an integer.
 If *value* is a floating point number, this function discard decimals.
-If *value* is neither a finite number, a numeric string nor other data type, this function returns NaN or *defaultValue* if it is specified.
+If *value* is neither an integer nor a numeric string, this function returns NaN, or *defaultValue* if specified.
 
+***NOTE:*** `Number('')` and `Number(' ')` return `0`. `parseInt(' 123')`,  `parseInt('123abc')`, `parseFloat(' 123')` and `parseFloat('123abc')` return `123`. However, this function returns `NaN` in all such cases.
 #### Parameter:
 
 | Parameter    |  Type  | Description                           |
 |--------------|:------:|---------------------------------------|
 | value        | *any*  | The number or string to be converted. |
-| defaultValue | *any*  | The default value if *value* is invalid. (Optional) |
+| defaultValue | *any*  | Is returned when failing to convert. (Optional) |
 
 #### Returns:
 
-The converted integer value. If failing to convert, NaN or *defaultValue* (if specified) is returned. 
+The converted integer value, or NaN (or *defaultValue* if specified) when failing to convert.
 
 **Type:** number
 
@@ -99,7 +102,7 @@ The converted integer value. If failing to convert, NaN or *defaultValue* (if sp
 
 ## License
 
-Copyright (C) 2017 Takayuki Sato
+Copyright (C) 2017-2018 Takayuki Sato
 
 This program is free software under [MIT][mit-url] License.
 See the file LICENSE in this distribution for more details.
