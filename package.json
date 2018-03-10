@@ -41,7 +41,7 @@
   "homepage": "https://github.com/sttk/fav-type.to-integer#readme",
   "dependencies": {
     "@fav/type.is-finite-number": "^1.0.1",
-    "@fav/type.to-number": "^0.1.0"
+    "@fav/type.to-number": "^1.0.0"
   },
   "devDependencies": {
     "browserify": "^16.1.0",
