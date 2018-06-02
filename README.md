@@ -67,13 +67,13 @@ The converted integer value, or NaN (or *defaultValue* if specified) when failin
 
 ## Checked                                                                      
 
-### Node.js (4〜8)
+### Node.js (4〜)
 
-| Platform  |   4    |   5    |   6    |   7    |   8    |
-|:---------:|:------:|:------:|:------:|:------:|:------:|
-| macOS     |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
-| Windows10 |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
-| Linux     |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
+| Platform  |   4    |   5    |   6    |   7    |   8    |   9    |   10   |
+|:---------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+| macOS     |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
+| Windows10 |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
+| Linux     |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
 
 ### io.js (1〜3)
 
@@ -85,11 +85,11 @@ The converted integer value, or NaN (or *defaultValue* if specified) when failin
 
 ### Node.js (〜0.12)
 
-| Platform  |  0.7   |  0.8   |  0.9   |  0.10  |  0.11  |  0.12  |
-|:---------:|:------:|:------:|:------:|:------:|:------:|:------:|
-| macOS     |        |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
-| Windows10 |        |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
-| Linux     |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
+| Platform  |  0.8   |  0.9   |  0.10  |  0.11  |  0.12  |
+|:---------:|:------:|:------:|:------:|:------:|:------:|
+| macOS     |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
+| Windows10 |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
+| Linux     |&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|&#x25ef;|
 
 ### Web browsers
 
