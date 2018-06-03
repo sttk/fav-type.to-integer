@@ -1,6 +1,6 @@
 {
   "name": "@fav/type.to-integer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Converts a number or a string to an integer.",
   "main": "index.js",
   "files": [
